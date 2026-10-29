@@ -1,27 +1,23 @@
-# Настройка рабочей среды для Python-разработки
+# Настройка рабочей среды для разработки на Python
 
-Данный репозиторий содержит базовый шаблон и конфигурацию рабочей среды для разработки на Python с использованием WSL (Ubuntu), Visual Studio Code и Git/GitHub.
+Репозиторий содержит конфигурацию рабочей среды на базе WSL 2 (Ubuntu), Visual Studio Code и Git.
 
-## 📋 Чек-лист выполненной настройки
+## Выполненные требования
 
-- [x] **WSL (Ubuntu)** установлен и настроен
-- [x] **Python 3** и **pip3** установлены внутри WSL Ubuntu
-- [x] **Visual Studio Code** настроен для работы через WSL (`Remote - WSL`)
-- [x] Установлены расширения VS Code:
-  - Remote - WSL (`ms-vscode-remote.remote-wsl`)
-  - Python (`ms-python.python`)
-  - Pylance (`ms-python.vscode-pylance`)
-  - GitLens (`eamodio.gitlens`)
-- [x] **Git** настроен (`user.name` и `user.email`)
-- [x] Создан публичный репозиторий на GitHub
-- [x] Репозиторий склонирован в WSL (`~/projects/python-environment-setup`)
-- [x] Создана структура папок `/app` и `/examples`
-- [x] Добавлены файлы `.gitignore`, `requirements.txt`, `README.md`
-- [x] В `app/main.py` реализован вывод `Hello, world!`
-- [x] Скрипт проверен и успешно запускается командой `python3 app/main.py`
-- [x] Сделан скриншот VS Code с результатом работы программы и сохранен в `examples/`
+- Установлена подсистема WSL 2 с дистрибутивом Ubuntu.
+- Установлены интерпретатор Python 3.14 и пакетный менеджер pip 25.1.
+- Развернут сервер VS Code в среде WSL через команду `code .`.
+- Установлены расширения VS Code: Remote - WSL, Python, Pylance, GitLens.
+- Настроен Git: указаны имя пользователя и адрес электронной почты.
+- Создан публичный репозиторий на GitHub.
+- Репозиторий склонирован в каталог `~/projects/python-environment-setup` внутри WSL.
+- Создана структура каталогов `app/` и `examples/`.
+- Добавлены файлы `.gitignore`, `requirements.txt` и `README.md`.
+- Создан модуль `app/main.py` с выводом строки `Hello, world!`.
+- Работа скрипта проверена запуском команды `python3 app/main.py`.
+- Снимок экрана VS Code с результатом работы сохранен в каталог `examples/`.
 
-## 📁 Структура проекта
+## Структура проекта
 
 ```text
 python-environment-setup/
@@ -34,15 +30,20 @@ python-environment-setup/
 └── requirements.txt
 ```
 
-## 🚀 Запуск программы
+## Запуск программы
 
-Для запуска основного скрипта в среде WSL Ubuntu выполните:
+Для запуска программы откройте терминал WSL и выполните команду:
 
 ```bash
 python3 app/main.py
 ```
 
 Результат выполнения:
+
 ```text
 Hello, world!
 ```
+
+## Результат работы в VS Code
+
+![Интерфейс VS Code с запущенной программой в WSL](examples/vscode_screenshot.png)
